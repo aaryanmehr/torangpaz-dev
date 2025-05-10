@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leads",
+  "info": {
+    "singularName": "lead",
+    "pluralName": "leads",
+    "displayName": "Leads"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "family_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "company": {
+      "type": "string"
+    },
+    "number_of_employees": {
+      "type": "integer"
+    },
+    "massage": {
+      "type": "richtext"
+    }
+  }
+}

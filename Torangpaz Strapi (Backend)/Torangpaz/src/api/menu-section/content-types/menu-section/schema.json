@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_sections",
+  "info": {
+    "singularName": "menu-section",
+    "pluralName": "menu-sections",
+    "displayName": "Menu Section",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "section_title": {
+      "type": "string"
+    },
+    "section_subtitle": {
+      "type": "string"
+    },
+    "menu_header": {
+      "type": "string"
+    },
+    "menu_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-category.menu-category",
+      "mappedBy": "menu_section"
+    }
+  }
+}
