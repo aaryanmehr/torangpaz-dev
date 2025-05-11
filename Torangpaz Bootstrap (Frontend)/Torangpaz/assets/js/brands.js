@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   
     try {
-      const res = await fetch(`${http://194.147.142.128:1337/}/api/brands?populate=brand_image`);
+     const res = await fetch(`${STRAPI_URL}/api/brands?populate=brand_image`);
+
       if (!res.ok) throw new Error(`خطای سرور: ${res.status}`);
       const json = await res.json();
       const brands = json?.data;
