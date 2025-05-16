@@ -47,5 +47,5 @@ function initHeroTyping() {
   }
 }
 
-// ✅ اجرای مستقیم هنگام لود کامل DOM
+
 document.addEventListener("DOMContentLoaded", initHeroTyping);
