@@ -1,6 +1,7 @@
 export default function initHeroTyping() {
     const startTyping = () => {
-      const element = document.querySelector("#hero h1");
+        const element = document.querySelector("#hero-title");
+
       if (!element) return;
   
       const text = element.textContent.trim();
